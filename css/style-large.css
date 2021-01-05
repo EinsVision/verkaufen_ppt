@@ -18,7 +18,13 @@
 
 		#banner h2 {
 			font-size: 2.5em;
+			font-weight: 500;
 		}
+
+	.viewMyWork{
+		font-weight: 300;
+		color: white;
+	}
 
 /* Footer */
 
