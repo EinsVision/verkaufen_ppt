@@ -3,6 +3,7 @@ let camera;
 let renderer;
 let scene;
 let house;
+let controls;
 
 function init(){
     container = document.querySelector('.scene');
@@ -25,10 +26,10 @@ function init(){
     
     container.appendChild(renderer.domElement);
 
-    const ambient = new THREE.AmbientLight(0x404040,5);
+    const ambient = new THREE.AmbientLight(0x404040,2);
     scene.add(ambient);
      
-    const light = new THREE.DirectionalLight(0xffffff,5);
+    const light = new THREE.DirectionalLight(0xffffff,2);
     light.position.set(10,10,100);
     scene.add(light);
     // Load Model
@@ -39,7 +40,10 @@ function init(){
         house = gltf.scene.children[0];
         renderer.render(scene, camera);
         animate();
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
     });
+
+    
 }
 
 function animate(){
@@ -48,12 +52,14 @@ function animate(){
     renderer.render(scene, camera);
 }
 
+
+
 init();
 
 function onWindowResize(){
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
-
+ 
     renderer.setSize(container.clientWidth, container.clientHeight);
 
 }
