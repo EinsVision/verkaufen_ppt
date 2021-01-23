@@ -1,7 +1,6 @@
 // tab에 따라 자연스러운 scroll을 구현한 함수
 
 function AutoScroll(a){
-    console.log(a);
     if(a === 'home'){
         window.scrollTo({top:0, left:0, behavior:'smooth'});
     }
