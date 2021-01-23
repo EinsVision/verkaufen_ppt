@@ -22,8 +22,12 @@
 		}
 
 	.viewMyWork{
-		font-weight: 300;
+		font-weight: 700;
 		color: white;
+		
+	}
+	.viewMyWork:hover{
+		background-color: blueviolet;
 	}
 
 /* Footer */
