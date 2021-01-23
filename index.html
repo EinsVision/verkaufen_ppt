@@ -17,18 +17,17 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/animate.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
-		<!-- <script src="js/chart.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
-			
 		</noscript>
 	</head>
 	<body id="top">
-		
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
 				<h1><a href="#">J.CHANGDAE</a></h1>
@@ -61,7 +60,21 @@
 				<header class="major">
 					<h2>About</h2>
 					<br>
-					
+					<!-- <div id="itemAOS" data-aos="fade-up">1</div>
+					<div class="itemAOS" data-aos="fade-down">2</div>
+					<div class="itemAOS" data-aos="fade-right">3</div>
+					<div class="itemAOS" data-aos="fade-left">4</div>
+
+					<div class="itemAOS" data-aos="zoom-in">5</div>
+					<div class="itemAOS" data-aos="zoom-out">6</div>
+
+					<div class="itemAOS" data-aos="slide-up">7</div>
+
+					<div class="itemAOS" data-aos="flip-up">8</div>
+					<div class="itemAOS" data-aos="flip-down">9</div>
+					<div class="itemAOS" data-aos="flip-right">10</div>
+					<div class="itemAOS" data-aos="flip-left">11</div> -->
+
 					</header>
 				<div class="container">
 					<div class="row">
@@ -162,7 +175,8 @@
 			
 		<!-- Two -->
 			<section id="two" class="wrapper style2">
-				<header class="major">
+				<header data-aos="fade-left" 
+						class="major">
 					<h2>Portfolio</h2>
 					<p>Press picture or LEARN MORE</p>
 				</header>
@@ -308,6 +322,8 @@
 					</ul>
 				</div>
 			</footer>
-		
+			<script>
+				AOS.init();
+			</script>
 	</body>
 </html>
