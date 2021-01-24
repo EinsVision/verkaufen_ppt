@@ -1,0 +1,142 @@
+body{
+    background-image: url(../images/gradation/bg.jpeg);
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#wrapper{
+    max-width: 68rem;
+    margin: 0 auto;
+}
+
+#header{
+    display:flex;
+    flex-direction: row;
+}
+
+#header .logo{
+    margin-top: 0.6rem;
+}
+
+#header .logo a{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-size: 2rem;
+    
+}
+
+#header .menu .icons li{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 2.3rem;
+    font-size: 1.5rem;
+}
+
+#header .menu .icons li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
+
+#header .menu .icons li a:hover{
+    color: thistle;
+}
+
+.Contents{
+    color: rgba(255,255,255,0.9);
+    
+}
+
+.titleName{
+    text-align: center;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    margin-bottom: 5rem;
+    display: block;
+    width: 100%;
+}
+
+.titleName h1{
+    font-size: 3rem;
+    color: mediumslateblue;
+    font-weight: 700;
+    
+}
+
+.titleName #category{
+    padding-top: 7rem;
+    color: khaki;
+}
+
+.titleName #author{
+    display: inline-block;
+    color: rgba(255,255,255,0.5);
+    
+    padding-right: 3rem;
+}
+
+.titleName #currentDate{
+    display: inline-block;
+    color: rgba(255,255,255,0.5);
+    padding-bottom: 7rem;
+}
+
+.Contents .description>*{
+    width: 100%;
+}
+
+.Contents .description h2{
+    font-size: 2rem;
+}
+
+.Contents .description p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.Contents .description img{
+    
+    display: block;
+}
+
+.Contents .description li{
+    font-size: 1.2rem;
+}
+
+.Contents .sourcecode{
+    font-size: 1.1rem;
+}
+
+#footer{
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-weight: 800;
+    padding-bottom: 3rem;
+}
+
+@media(max-width: 780px){
+    #header{
+        display:block;
+    }
+
+    #header .menu .icons li{
+        /* display: inline-block; */
+        margin-right: 1.3rem;
+        margin-left: -1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .titleName{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+} 
+
+@media(max-width: 480px){
+    #header .logo{
+        text-align: center;
+    }
+
+    #header .menu .icons li{
+        display: none;
+    }
+} 
+
